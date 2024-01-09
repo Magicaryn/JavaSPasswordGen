@@ -11,23 +11,23 @@ function writePassword() {
   var symbols = "!@#$%^&*?"
   var passwordlength = prompt("How long would you like your password?")
   var password ="";
-  if (passwordlength < 8 || passwordlength > 128 || Number.isNaN(passwordlength)){
+  if (passwordlength < 8 || passwordlength > 128 || Number.isNaN (passwordlength)){
     alert("Must choose a number greater than 8 or less than 128.")
     return null
   }
-  var wantchar = confirm("Would you like uppercase characters?")
+  var wantchar = confirm("Would you like uppercase characters? Ok for YES Cancel for NO")
   if (wantchar === true) {
     password += char
   }
-  var wantlowerchar = confirm("Would you like lowercase characters?")
+  var wantlowerchar = confirm("Would you like lowercase characters?  Ok for YES Cancel for NO")
   if (wantlowerchar === true){
     password += lowerchar
   }
-  var wantnumbers = confirm("Would you like numbers?")
+  var wantnumbers = confirm("Would you like numbers?  Ok for YES Cancel for NO")
   if (wantnumbers === true){
     password += numbers
   }
-  var wantsymbols = confirm("Would you like symbols?")
+  var wantsymbols = confirm("Would you like symbols?  Ok for YES Cancel for NO")
   if (wantsymbols === true){
     password += symbols
   }
